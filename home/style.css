@@ -12,7 +12,12 @@ body {
     background: linear-gradient(to bottom,#f1f8f7,#ff8fa3,#ff758f);
     overflow: hidden;
 }
-
+.bnt {
+    color: white;
+    font-family: "Comic Neue", cursive;
+    text-align: center;
+    text-decoration: none;
+}
 #encabezado-container {
     display: flex;
     justify-content: center;

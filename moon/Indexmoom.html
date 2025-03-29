@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="moon.css">
+    <title>O Universo Infinito</title>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="constellations"></div>
+    <div class="black-holes"></div>
+    <h1>O MEU UNIVERSO E VOCÊ</h1>
+    <div class="message-box">
+        <p>OI MEU AMOR</p>
+        <p>Assim como o universo é vasto e cheio de possibilidades, espero que sua vida seja repleta de descobertas incríveis e momentos inesquecíveis.</p>
+        <p>Que cada estrela no céu seja um lembrete do quanto você é 
+        <p>mesmo na vastidão do universo, seu sorriso é o que mais cativa.
+        <br>
+        mesmo com o mais lindo brilho da lua, O de seus olhos é o único que eu quero.
+        <br>
+        infelizmente sou apenas um astronauta tentando decifrar a galáxia que você e.</p>
+    </div>
+
+
+    <script>
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            for (let i = 0; i < 300; i++) { 
+                let star = document.createElement('span');
+                let x = Math.random() * window.innerWidth;
+                let y = Math.random() * window.innerHeight;
+                let size = Math.random() * 3;
+                
+                star.style.left = `${x}px`;
+                star.style.top = `${y}px`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                starsContainer.appendChild(star);
+            }
+        }
+        
+        function createConstellations() {
+            const constellationsContainer = document.querySelector('.constellations');
+            for (let i = 0; i < 5; i++) {
+                let constellation = document.createElement('span');
+                let x = Math.random() * window.innerWidth;
+                let y = Math.random() * window.innerHeight;
+                let size = Math.random() * 4 + 2;
+                
+                constellation.style.left = `${x}px`;
+                constellation.style.top = `${y}px`;
+                constellation.style.width = `${size}px`;
+                constellation.style.height = `${size}px`;
+                
+                constellationsContainer.appendChild(constellation);
+            }
+        }
+        
+        createStars();
+        createConstellations();
+    </script>
+</body>
+</html>
