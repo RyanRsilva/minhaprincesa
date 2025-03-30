@@ -17,6 +17,8 @@ body {
     font-family: "Comic Neue", cursive;
     text-align: center;
     text-decoration: none;
+    background-color: rgb(182, 38, 38);
+    border-radius: 100px;
 }
 #encabezado-container {
     display: flex;
